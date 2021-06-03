@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+     a = +prompt("Введите число");
+     b = +prompt("Введите число");
+     oper = prompt("Введите математические операторы +, -, *, /");
+
+    function Addition(a, b) {
+        return a + b;
+    }
+
+    function Subtraction(a, b) {
+        return a - b;
+    }
+
+    function Multiplication(a, b) {
+        return a * b;
+    }
+
+    function Division(a, b) {
+        if (b != 0)
+            return a / b;
+        return 0;
+    }
+
+    function mathOperation(a, b, oper) {
+        switch (oper) {
+            case "+":
+                alert(Addition(a, b));
+                break;
+            case "-":
+                alert(Subtraction(a, b));
+                break;
+            case "*":
+                alert(Multiplication(a, b));
+                break;
+            case "/":
+                alert(Division(a, b));
+                break;
+            default:
+                alert('Не то ввел')
+                break;
+        }
+    }
+
+    mathOperation(a, b, oper)
+</script>
+</body>
+</html>
