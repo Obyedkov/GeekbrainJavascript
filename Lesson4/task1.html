@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var num = prompt("Введите чисто от 9 до 999:"), num2 = num.length;
+    obj = {};
+    Discharge(num);
+
+
+    function Discharge(num) {
+        if (num < 0 && num > 999) {
+            console.log("Число : ");
+        } else {
+            switch (num2) {
+                case 3:
+                    obj.units = num[2];
+                    obj.tens = num[1];
+                    obj.hundreds = num[0];
+                    break;
+                case 2:
+                    obj.units = num[1];
+                    obj.tens = num[0];
+                    break;
+                default:
+                    obj.units = num;
+            }
+            console.log(obj);
+        }
+        return obj;
+    }
+</script>
+</body>
+</html>
