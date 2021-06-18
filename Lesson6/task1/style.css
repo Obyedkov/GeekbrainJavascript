@@ -1,0 +1,8 @@
+.cars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cars img{
+    width: 250px;
+}
